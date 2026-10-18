@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- EDIT: Page title & description -->
+  <title>Abu Sayed | Software Engineer</title>
+  <meta name="description" content="Abu Sayed is a software engineer in Dhaka, Bangladesh, working with .NET Core, PostgreSQL, and JavaScript." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Preloader ===== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__spinner"></div>
+  </div>
+
+  <!-- ===== Scroll progress bar ===== -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar" id="navbar">
+    <nav class="navbar__container container">
+      <a href="#home" class="navbar__logo">Abu<span>Sayed</span></a>
+
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="#home" class="navbar__link active">Home</a></li>
+        <li><a href="#about" class="navbar__link">About</a></li>
+        <li><a href="#skills" class="navbar__link">Skills</a></li>
+        <li><a href="#projects" class="navbar__link">Projects</a></li>
+        <li><a href="#experience" class="navbar__link">Experience</a></li>
+        <li><a href="#education" class="navbar__link">Education</a></li>
+        <li><a href="#contact" class="navbar__link">Contact</a></li>
+      </ul>
+
+      <div class="navbar__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button class="navbar__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="home">
+      <div class="hero__bg">
+        <span class="blob blob--1"></span>
+        <span class="blob blob--2"></span>
+        <span class="blob blob--3"></span>
+      </div>
+
+      <div class="hero__content container">
+        <p class="hero__greeting reveal">👋 Hello there</p>
+        <h1 class="hero__title reveal">Hi, I'm <span class="gradient-text">Abu Sayed</span></h1>
+        <h2 class="hero__role reveal">
+          <span id="typewriter"></span><span class="hero__cursor">|</span>
+        </h2>
+<p class="hero__tagline reveal">I build web applications with .NET Core, PostgreSQL, TypeScript, and JavaScript. I finished my BSc in CSE and I'm now doing my MEngg in CSE at BRAC University while working full time.</p>
+        <div class="hero__cta reveal">
+          <a href="#projects" class="btn btn--primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+          <!-- EDIT: Put your resume file next to index.html and update href -->
+          <a href="resume.pdf" class="btn btn--outline" download>Download Resume <i class="fa-solid fa-download"></i></a>
+        </div>
+
+        <div class="socials reveal">
+          <a href="https://github.com/saikat455" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/abusayedl" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:sayed.saikat25@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section__title reveal">About <span class="gradient-text">Me</span></h2>
+        <div class="about__grid">
+          <div class="about__image reveal"><img src="https://placehold.co/400x400/1e1b4b/a5b4fc?text=Abu+Sayed" alt="Abu Sayed" /></div>
+          <div class="about__text reveal">
+            <p>I'm a software engineer from Dhaka, Bangladesh. I work mostly with .NET Core, Web API, PostgreSQL, and JavaScript. Most of my day is spent building backend modules, writing REST APIs, and making databases run faster.</p>
+            <p>I enjoy solving problems and learning new things. Right now I'm doing my MSc in CSE while working full time, so I stay pretty busy &mdash; but I like it that way. I care about writing clean code that other people can actually read and maintain.</p>
+            <div class="facts">
+  <div class="facts__item glass"><i class="fa-solid fa-briefcase"></i><div><span>Experience</span><strong>2+ year</strong></div></div>
+  <div class="facts__item glass"><i class="fa-solid fa-envelope"></i><div><span>Email</span><strong>sayed.saikat25@gmail.com</strong></div></div>
+  <div class="facts__item glass"><i class="fa-solid fa-phone"></i><div><span>Phone</span><strong>+880 1878-640229</strong></div></div>
+  <div class="facts__item glass"><i class="fa-solid fa-location-dot"></i><div><span>Location</span><strong>Rampura, Dhaka, Bangladesh</strong></div></div>
+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2 class="section__title reveal">What I <span class="gradient-text">Work With</span></h2>
+        <div class="skills__grid">
+          <article class="skill-card glass reveal"><h3 class="skill-card__title"><i class="fa-solid fa-code"></i> Languages</h3><ul class="tags"><li>C#</li><li>C++</li><li>JavaScript</li><li>TypeScript</li><li>SQL</li></ul></article>
+<article class="skill-card glass reveal"><h3 class="skill-card__title"><i class="fa-solid fa-server"></i> Backend</h3><ul class="tags"><li>ASP.NET Core MVC</li><li>Web API</li><li>Entity Framework Core</li><li>Node.js</li><li>REST APIs</li><li>Clean Architecture</li></ul></article>
+<article class="skill-card glass reveal"><h3 class="skill-card__title"><i class="fa-solid fa-laptop-code"></i> Frontend</h3><ul class="tags"><li>React.js</li><li>Next.js</li><li>HTML / CSS</li><li>Bootstrap</li><li>Tabulator.js</li></ul></article>
+          <article class="skill-card glass reveal"><h3 class="skill-card__title"><i class="fa-solid fa-database"></i> Databases &amp; Tools</h3><ul class="tags"><li>PostgreSQL</li><li>MySQL</li><li>Stored Procedures</li><li>EF Core Migrations</li></ul></article>
+          <article class="skill-card glass reveal"><h3 class="skill-card__title"><i class="fa-solid fa-people-group"></i> Other Skills</h3><ul class="tags"><li>Leadership</li><li>Teamwork</li><li>Communication</li><li>Quick Learner</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2 class="section__title reveal">Things I've <span class="gradient-text">Built</span></h2>
+        <p class="projects__hint">Select a project to see what it does.</p>
+        <div class="projects__grid">
+          <article class="project-card glass reveal" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View LaunchNote project details" data-project="launchnote">
+            <div class="project-card__thumb"><img src="https://placehold.co/600x400/1e3a8a/93c5fd?text=LaunchNote" alt="LaunchNote changelog, roadmap and feedback platform" /></div>
+            <div class="project-card__body"><h3>LaunchNote &mdash; Changelog, Roadmap &amp; Feedback Platform</h3><p>A multi-tenant SaaS where teams publish product updates, collect and rank user feedback, and share a public roadmap.</p><ul class="tags"><li>Next.js</li><li>Node.js</li><li>PostgreSQL</li></ul><span class="project-card__prompt">View project details <i class="fa-solid fa-arrow-right"></i></span></div>
+          </article>
+
+          <article class="project-card glass reveal" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View ErpMini project details" data-project="erpmini">
+            <div class="project-card__thumb"><img src="https://placehold.co/600x400/312e81/67e8f9?text=ErpMini" alt="ErpMini ERP system" /></div>
+            <div class="project-card__body"><h3>ErpMini &mdash; Multi-Tenant ERP System</h3><p>A multi-tenant ERP system with HR, Leave, Payroll, Procurement, and Accounts modules.</p><ul class="tags"><li>.NET Core MVC</li><li>PostgreSQL</li><li>Clean Architecture</li></ul><span class="project-card__prompt">View project details <i class="fa-solid fa-arrow-right"></i></span></div>
+          </article>
+          <article class="project-card glass reveal" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View RetailFlow project details" data-project="retailflow">
+            <div class="project-card__thumb"><img src="https://placehold.co/600x400/164e63/c4b5fd?text=RetailFlow" alt="RetailFlow POS and inventory system" /></div>
+            <div class="project-card__body"><h3>RetailFlow &mdash; POS &amp; Inventory System</h3><p>A shop management system for handling sales, stock, and invoices in one place.</p><ul class="tags"><li>.NET 9</li><li>React</li><li>PostgreSQL</li></ul><span class="project-card__prompt">View project details <i class="fa-solid fa-arrow-right"></i></span></div>
+          </article>
+          <article class="project-card glass reveal" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View LearnHub project details" data-project="learnhub">
+            <div class="project-card__thumb"><img src="https://placehold.co/600x400/4c1d95/a5f3fc?text=LearnHub" alt="LearnHub online course platform" /></div>
+            <div class="project-card__body"><h3>LearnHub &mdash; Online Course Platform</h3><p>A course platform where users can browse courses, enroll, and track progress.</p><ul class="tags"><li>React</li><li>Node.js</li><li>PostgreSQL</li></ul><span class="project-card__prompt">View project details <i class="fa-solid fa-arrow-right"></i></span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <dialog class="project-dialog" id="projectDialog" aria-labelledby="dialogTitle">
+      <button class="project-dialog__close" type="button" aria-label="Close project details"><i class="fa-solid fa-xmark"></i></button>
+      <div class="project-dialog__content"><p class="project-dialog__eyebrow">PROJECT DETAILS</p><h2 id="dialogTitle"></h2><p class="project-dialog__description" id="dialogDescription"></p><h3>Built with</h3><ul class="tags" id="dialogTech"></ul><a class="btn btn--primary" id="dialogGithub" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View on GitHub</a></div>
+    </dialog>
+
+        <!-- ===== Experience ===== -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <h2 class="section__title reveal">Where I've <span class="gradient-text">Worked</span></h2>
+        <div class="timeline">
+          <div class="timeline__item reveal"><div class="timeline__content glass"><span class="timeline__date">Jan 2025 &ndash; Present</span><h3>Junior Programmer</h3><h4>Genuine Technology &amp; Research Ltd. &middot; Dhaka</h4><ul class="detail-list"><li>I build backend modules for an ERP system &mdash; Payroll, Attendance, Loan, Offboarding, and Task Management.</li><li>I write REST APIs that connect the frontend with backend services, and I fix bugs in production when something breaks.</li><li>I worked on the salary template and import system so it can handle different types of salary components.</li><li>I write PostgreSQL stored procedures for company-specific salary processing, including final settlement logic that used to be done manually.</li><li>I built an employee data grid using Tabulator.js with grouped columns and export options for Excel, PDF, and print.</li><li>I refactored the Exit Interview feature across the model, DTO, controller, repository, and view layers, and built a matrix-style answer form that saves everything as JSON.</li></ul></div></div>
+          <div class="timeline__item reveal"><div class="timeline__content glass"><span class="timeline__date">Oct 2024 &ndash; Jan 2025</span><h3>Intern</h3><h4>Genuine Technology &amp; Research Ltd. &middot; Dhaka</h4><ul class="detail-list"><li>I worked on Offboarding features like Handover, Checklist, and Final Settlement as part of the live ERP system.</li><li>I built and tested backend workflows using ASP.NET Core and Entity Framework Core, and learned how Clean Architecture is used in a real codebase.</li><li>I helped with coding, testing, debugging, and writing technical documentation under senior engineers.</li><li>I joined code reviews and learned how production-level code and PostgreSQL queries are written.</li><li>I studied the existing database schema and stored procedure setup before adding new features.</li></ul></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Education ===== -->
+    <section class="section education" id="education">
+      <div class="container">
+        <h2 class="section__title reveal">My <span class="gradient-text">Education</span></h2>
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <div class="timeline__content glass">
+              <span class="timeline__date">2026 &ndash; Ongoing</span>
+              <h3>Master of Engineering (MEngg) in CSE</h3>
+              <h4>BRAC University &middot; Bangladesh</h4>
+            </div>
+          </div>
+          <div class="timeline__item reveal">
+            <div class="timeline__content glass">
+              <span class="timeline__date">2020 &ndash; 2024</span>
+              <h3>Bachelor of Science (BSc) in CSE</h3>
+              <h4>Independent University &middot; Bangladesh</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section recognition" id="recognition">
+      <div class="container"><h2 class="section__title reveal">Awards &amp; <span class="gradient-text">Certificates</span></h2>
+        <div class="skills__grid">
+          <article class="skill-card glass reveal"><h3>CCNAv7: Introduction to Networks</h3><p>Cisco &middot; Learned the basics of networking, protocols, and how data moves between systems.</p></article>
+          <article class="skill-card glass reveal"><h3>1st Runner-Up, Microprocessor Showcase</h3><p>Techfest &middot; Worked on an embedded systems project and placed 2nd in the showcase.</p></article>
+          <article class="skill-card glass reveal"><h3>Live in Field Experience (LFE)</h3><p>Bagura RDA &middot; Got hands-on training on how IT is used in rural development projects.</p></article>
+        </div>
+        <h2 class="section__title reveal recognition__subheading">Beyond <span class="gradient-text">Work</span></h2>
+        <div class="skills__grid">
+          <article class="skill-card glass reveal"><h3>Director of Operations</h3><p>IUB ACM Student Chapter &middot; Helped plan and manage student-led events and initiatives.</p></article>
+          <article class="skill-card glass reveal"><h3>Coordinator, ACM Week</h3><p>Helped organize and run events during ACM Week.</p></article>
+          <article class="skill-card glass reveal"><h3>Invigilator, Intra IUB Programming Contest</h3><p>Helped run the contest and made sure everything went smoothly.</p></article>
+          <article class="skill-card glass reveal"><h3>Member, Bangladesh Scouts</h3><p>Learned teamwork, responsibility, and how to serve the community.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section__title reveal">Let's <span class="gradient-text">Talk</span></h2>
+
+        <div class="contact__grid">
+          <!-- EDIT: Contact info -->
+          <div class="contact__info reveal">
+            <p>Got a project in mind, or just want to say hi? Feel free to reach out &mdash; I'll get back to you as soon as I can.</p>
+            <div class="contact__item glass"><i class="fa-solid fa-envelope"></i><div><span>Email</span><a href="mailto:sayed.saikat25@gmail.com">sayed.saikat25@gmail.com</a></div></div>
+            <div class="contact__item glass"><i class="fa-solid fa-phone"></i><div><span>Phone</span><a href="tel:+8801878640229">+880 1878-640229</a></div></div>
+            <div class="contact__item glass"><i class="fa-solid fa-location-dot"></i><div><span>Location</span><p>Rampura, Dhaka, Bangladesh</p></div></div>
+            <div class="contact__item glass"><i class="fa-brands fa-linkedin"></i><div><span>LinkedIn</span><a href="https://linkedin.com/in/abusayedl" target="_blank" rel="noopener">linkedin.com/in/abusayedl</a></div></div>
+            <div class="contact__item glass"><i class="fa-brands fa-github"></i><div><span>GitHub</span><a href="https://github.com/saikat455" target="_blank" rel="noopener">github.com/saikat455</a></div></div>
+          </div>
+
+          <form class="contact__form glass reveal" id="contactForm" novalidate>
+            <div class="form__group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" />
+              <small class="form__error"></small>
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="sayed.saikat25@gmail.com" />
+              <small class="form__error"></small>
+            </div>
+            <div class="form__group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+              <small class="form__error"></small>
+            </div>
+            <div class="form__group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message..."></textarea>
+              <small class="form__error"></small>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+            <p class="form__success" id="formSuccess" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <p>&copy; <span id="year"></span> Abu Sayed. All rights reserved.</p>
+      <ul class="footer__links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#recognition">Awards</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
