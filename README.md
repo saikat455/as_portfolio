@@ -21,4 +21,8 @@ Double-click `index.html`, or serve the folder (e.g. VS Code "Live Server").
 8. **Contact form** – currently demo-only. For real emails, use a service like Formspree: set `action="https://formspree.io/f/yourid" method="POST"` on the form and remove the `e.preventDefault()` logic in `initContactForm`.
 
 ## Deploy
-Upload the folder to GitHub Pages, Netlify or Vercel — it's just static files.
+The site files are in the repository root so GitHub Pages can serve `index.html`.
+
+For GitHub Pages, open the repository's **Settings → Pages** and set **Build and deployment** to **Deploy from a branch**, choose `main` and `/(root)`, then save. The site will be available at `https://saikat455.github.io/AS_PORTFOLIO/` after Pages finishes deploying.
+
+The same root folder can be deployed to Netlify or Vercel as a static site; no build command is needed.
